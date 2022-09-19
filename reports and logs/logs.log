@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-09-19T18:10:46.552691600Z</date>
+  <millis>1663611046552</millis>
+  <nanos>691600</nanos>
+  <sequence>0</sequence>
+  <logger>base.Setup</logger>
+  <level>INFO</level>
+  <class>base.Setup</class>
+  <method>preparations</method>
+  <thread>1</thread>
+  <message>now logs toC:\Users\noam\Desktop\javadev\atidStoreTestign\reports and logs\logs.log</message>
+</record>
+<record>
+  <date>2022-09-19T18:10:46.579685400Z</date>
+  <millis>1663611046579</millis>
+  <nanos>685400</nanos>
+  <sequence>1</sequence>
+  <logger>base.Setup</logger>
+  <level>INFO</level>
+  <class>base.Setup</class>
+  <method>preparations</method>
+  <thread>1</thread>
+  <message>starting suite</message>
+</record>
+<record>
+  <date>2022-09-19T18:10:46.581686800Z</date>
+  <millis>1663611046581</millis>
+  <nanos>686800</nanos>
+  <sequence>2</sequence>
+  <logger>base.Setup</logger>
+  <level>INFO</level>
+  <class>base.Setup</class>
+  <method>preparations</method>
+  <thread>1</thread>
+  <message>config file loaded</message>
+</record>
+<record>
+  <date>2022-09-19T18:10:49.005199200Z</date>
+  <millis>1663611049005</millis>
+  <nanos>199200</nanos>
+  <sequence>6</sequence>
+  <logger>base.Setup</logger>
+  <level>INFO</level>
+  <class>base.Setup</class>
+  <method>preparations</method>
+  <thread>1</thread>
+  <message>chrome started</message>
+</record>
+<record>
+  <date>2022-09-19T18:10:51.329918400Z</date>
+  <millis>1663611051329</millis>
+  <nanos>918400</nanos>
+  <sequence>7</sequence>
+  <logger>base.Setup</logger>
+  <level>INFO</level>
+  <class>base.Setup</class>
+  <method>preparations</method>
+  <thread>1</thread>
+  <message>navigated to to : http://www.atid.store</message>
+</record>
+</log>
