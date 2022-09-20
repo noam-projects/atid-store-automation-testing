@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2022-09-19T18:10:46.552691600Z</date>
-  <millis>1663611046552</millis>
-  <nanos>691600</nanos>
+  <date>2022-09-20T12:49:07.848927400Z</date>
+  <millis>1663678147848</millis>
+  <nanos>927400</nanos>
   <sequence>0</sequence>
   <logger>base.Setup</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>now logs toC:\Users\noam\Desktop\javadev\atidStoreTestign\reports and logs\logs.log</message>
 </record>
 <record>
-  <date>2022-09-19T18:10:46.579685400Z</date>
-  <millis>1663611046579</millis>
-  <nanos>685400</nanos>
+  <date>2022-09-20T12:49:07.884929500Z</date>
+  <millis>1663678147884</millis>
+  <nanos>929500</nanos>
   <sequence>1</sequence>
   <logger>base.Setup</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>starting suite</message>
 </record>
 <record>
-  <date>2022-09-19T18:10:46.581686800Z</date>
-  <millis>1663611046581</millis>
-  <nanos>686800</nanos>
+  <date>2022-09-20T12:49:07.887929500Z</date>
+  <millis>1663678147887</millis>
+  <nanos>929500</nanos>
   <sequence>2</sequence>
   <logger>base.Setup</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>config file loaded</message>
 </record>
 <record>
-  <date>2022-09-19T18:10:49.005199200Z</date>
-  <millis>1663611049005</millis>
-  <nanos>199200</nanos>
+  <date>2022-09-20T12:49:10.482929Z</date>
+  <millis>1663678150482</millis>
+  <nanos>929000</nanos>
   <sequence>6</sequence>
   <logger>base.Setup</logger>
   <level>INFO</level>
@@ -50,9 +50,9 @@
   <message>chrome started</message>
 </record>
 <record>
-  <date>2022-09-19T18:10:51.329918400Z</date>
-  <millis>1663611051329</millis>
-  <nanos>918400</nanos>
+  <date>2022-09-20T12:49:14.418955Z</date>
+  <millis>1663678154418</millis>
+  <nanos>955000</nanos>
   <sequence>7</sequence>
   <logger>base.Setup</logger>
   <level>INFO</level>
