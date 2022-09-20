@@ -1,5 +1,7 @@
 package pages;
 
+import base.ExtentReporter;
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,11 +30,16 @@ public class StorePage {
     }
 
     public void check_sorting() {
+        ExtentTest reporter= ExtentReporter.test;
+        reporter.info("starting sorting by popularity test");
         driver.get(this.url);
+        reporter.info("navigated to "+this.url);
         WebElement sorting_selection = driver.findElement(By.name("orderby"));
         Select selectObject = new Select(sorting_selection);
         selectObject.selectByValue("rating");
+        reporter.info("changed sort parameter to be orderby");
         List<WebElement> store_items = driver.findElements(items_rating);
+        reporter.info("found "+store_items.size()+" items");
         if (store_items == null)
             Assert.fail("didn't find any items");
         for (int i = 0; i < store_items.size(); i++) {
@@ -50,12 +57,17 @@ public class StorePage {
     }
 
     public void move_price_filter_slider(int intervals) {
+        ExtentTest reporter= ExtentReporter.test;
+        reporter.info("starting moving slider test with values "+intervals);
         driver.get(this.url);
         WebElement price_slider_right_part = driver.findElement(price_slider_right);
         new Actions(driver).dragAndDropBy(price_slider_right_part, -11 * intervals, 0).perform();
+        reporter.info("moved right slider by "+intervals);
         WebElement price_slider_left_part = driver.findElement(getPrice_slider_left);
         new Actions(driver).dragAndDropBy(price_slider_left_part, 11 * intervals, 0).perform();
+        reporter.info("moved left slider by "+intervals);
         driver.findElement(filter).click();
+        reporter.info("clicked on filter button");
         int min_price = 0;
         int max_price = 0;
         String line = driver.findElement(from_price_range).getText();
@@ -74,6 +86,7 @@ public class StorePage {
         List<WebElement> store_items = driver.findElements(items_price);
         List <WebElement> store_items_in_sale=driver.findElements(items_price_in_sale);
         store_items.addAll(store_items_in_sale);
+        reporter.info("found total of items:"+store_items.size());
         if (store_items == null)
             Assert.fail("didn't find any items");
         for (int i = 0; i < store_items.size(); i++) {

@@ -26,10 +26,10 @@ public class Setup
 {
     public static WebDriver driver;
     public Properties main_config = new Properties();
-    public final Logger LOGGER = Logger.getLogger(Setup.class.getName());
+    public static final Logger LOGGER = Logger.getLogger(Setup.class.getName());
     public FileInputStream fis;
     public Handler fileHandler = null;
-    public String fileName;
+    public String screen_shot_name;
 @BeforeSuite
     public void preparations()
 {
@@ -73,12 +73,6 @@ public class Setup
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 }
-    public void captureScreenshot() throws IOException {
-        Date d = new Date();
-        fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
-        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\screenshots\\"+fileName));
-    }
     @AfterSuite
     public void quitDriver()
     {

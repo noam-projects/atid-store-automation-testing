@@ -3,10 +3,12 @@
 <suite name="Atid_store_Test_Suite" verbose="1" >
 
     <listeners>
+        <listener class-name="base.ExtentReportsListener"></listener>
     </listeners>
     <test name="homepage tests">
         <classes>
             <class name="base.Setup"></class>
+            <class name="base.ExtentReporter"></class>
             <class name="Tests.Validate_home_links_test"></class>
             <class name="Tests.Validate_mobile_store_links"></class>
         </classes>
@@ -14,12 +16,14 @@
     <test name="storepage tests">
         <classes>
             <class name="base.Setup"></class>
+            <class name="base.ExtentReporter"></class>
             <class name="Tests.store_page_tests"></class>
         </classes>
     </test>
     <test name="contact page tests">
         <classes>
             <class name="base.Setup"></class>
+            <class name="base.ExtentReporter"></class>
             <class name="Tests.contage_page_tests"></class>
         </classes>
     </test>
