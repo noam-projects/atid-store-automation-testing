@@ -13,7 +13,7 @@ To use the project downnload the files in java IDE such as InteliJ or Eclipse an
 than you can go to logs and reports folder and find detaild report on the test in nice graphics window in extent.html file.
 
 # Key technologies used in this project
-TestNG for testing framework
-selenium for controlling automated browser
-extent report for as reporting framework
-logging using java util logger
+* TestNG for testing framework
+* selenium for controlling automated browser
+* extent report for as reporting framework
+* logging using java util logger
